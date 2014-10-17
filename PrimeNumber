@@ -1,8 +1,11 @@
 
-package testingjavacode;
-
 import java.util.SortedSet;
 import java.util.concurrent.ConcurrentSkipListSet;
+
+/**
+*
+* @author sourabhmundhada
+*/
 
 public class PrimeNumber {
 
