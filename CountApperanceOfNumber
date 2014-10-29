@@ -1,6 +1,6 @@
 /**
  *
- * @author smundhada
+ * @author sourabhmundhada
  *
  * 1000 has 300 count of 2's in it. 2000 has 2*300 count of 2's in it. 3000 has
  * 3*300+1000 counts of 2's in it.
