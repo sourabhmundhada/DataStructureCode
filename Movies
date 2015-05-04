@@ -108,4 +108,23 @@ public class Movies {
         return movieList;
     }
 
+    private int tempCount = 0;
+    // Below code will print movie tree for non development users from the list of movies. 
+    public void printListOfMoviesForNonDevelopmentUser(Movies movies){    
+        System.out.println();
+        for(int i = 0; i < tempCount; i++){
+            System.out.print(" ");
+        }
+        System.out.print("-"+movies.getName());
+        if(movies.relatedMovies != null){
+            for(Movies movie : movies.relatedMovies){
+                tempCount++;
+                printListOfMoviesForNonDevelopmentUser(movie);
+            }
+            tempCount--;
+        } else {
+            tempCount--;
+        }
+    }
+
 }
