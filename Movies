@@ -126,5 +126,19 @@ public class Movies {
             tempCount--;
         }
     }
+    
+    // Below code will print movie tree for non development users from the list of movies witout using temporary variable.
+    public void printListOfMoviesForNonDevelopmentUser(Movies movies, int count) {
+        System.out.println();
+        for (int i = 0; i < count; i++) {
+            System.out.print(" ");
+        }
+        System.out.print("-" + movies.getName());
+        if (movies.relatedMovies != null) {
+            for (Movies movie : movies.relatedMovies) {
+                printListOfMoviesForNonDevelopmentUser(movie, count+1);
+            }
+        }
+    }
 
 }
