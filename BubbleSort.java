@@ -1,5 +1,5 @@
 public class BubbleSort {
-    public void sortArray(int[] q) {
+    public int[] sortArray(int[] q) {
         boolean isArraySorted = false;
         do {
             int swapCounter = 0;
@@ -15,5 +15,6 @@ public class BubbleSort {
                 isArraySorted = true;
             }
         } while (!isArraySorted);
+        return q;
     }
 }
